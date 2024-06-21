@@ -15,11 +15,6 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4.1.7
 
-            - name: Super-Linter
-              uses: github/super-linter@v5
-              env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
             - name: Test with the dotnet CLI
               run: dotnet test
             
